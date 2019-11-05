@@ -3,7 +3,7 @@ Othila API Call List
 
 ### Listing my Othila Addresses
 
-Listing the Othila [address|addresses] in your wallet is easily done via listreceivedbyaddress. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
+Listing the Othila [address|addresses] in your wallet is easily done via `listreceivedbyaddress`. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
 
 ### Full list
 

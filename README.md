@@ -1,9 +1,9 @@
-Othila API Call List
+BTCT API Call List
 =====================================
 
-### Listing my Othila Addresses
+### Listing my BTCT Addresses
 
-Listing the Othila [address|addresses] in your wallet is easily done via `listreceivedbyaddress`. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
+Listing the BTCT [address|addresses] in your wallet is easily done via `listreceivedbyaddress`. It normally lists only addresses which already have received transactions, however you can list all the addresses by setting the first argument to 0, and the second one to true.
 
 ### Full list
 
@@ -28,7 +28,7 @@ Required arguments are denoted inside &lt; and &gt; Optional arguments are insid
 <tr><td colspan=4 align=center>Control</td></tr>
 <tr><td>getinfo</td><td>&nbsp;</td><td>Returns an object containing various state info.</td><td>N</td></tr>
 <tr><td>help</td><td>[command]</td><td>List all commands, or get help for a specified command.</td><td>N</td></tr>
-<tr><td>stop</td><td>&nbsp;</td><td>Stop Othila server.</td><td>N</td></tr>
+<tr><td>stop</td><td>&nbsp;</td><td>Stop BTCT server.</td><td>N</td></tr>
 <tr><td colspan=4 align=center>Generating</td></tr>
 <tr><td>getgenerate</td><td>&nbsp;</td><td>"PoW Only" Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or othila.conf setting gen) It can also be set with the setgenerate call.</td><td>N</td></tr>
 <tr><td>setgenerate</td><td>&lt;generate&gt; [genproclimit]</td><td>"PoW Only" Set 'generate' true or false to turn generation on or off. Generation is limited to 'genproclimit' processors, -1 is unlimited. See the getgenerate call for the current setting.</td><td>N</td></tr>
@@ -54,7 +54,7 @@ otherwise connected information will also be available.</td><td>N</td></tr>
 <tr><td>listbanned</td><td>&nbsp;</td><td>List all banned IPs/Subnets.</td><td>N</td></tr>
 <tr><td>ping</td><td>&nbsp;</td><td>Requests that a ping be sent to all other nodes, to measure ping time.</td><td>N</td></tr>
 <tr><td>setban</td><td>&lt;ip(/netmask)&gt; &lt;add&#124;remove&gt; [bantime] [absolute]</td><td>Attempts add or remove a IP/Subnet from the banned list.</td><td>N</td></tr>
-<tr><td colspan=4 align=center>Othila</td></tr>
+<tr><td colspan=4 align=center>BTCT</td></tr>
 <tr><td>createmasternodekey</td><td>&nbsp;</td><td>Create a new masternode private key.</td><td>N</td></tr>
 <tr><td>getmasternodecount</td><td>&nbsp;</td><td>Get masternode count values.</td><td>N</td></tr>
 <tr><td>getmasternodeoutputs</td><td>&nbsp;</td><td>Print all masternode transaction outputs.</td><td>N</td></tr>
@@ -84,9 +84,9 @@ otherwise connected information will also be available.</td><td>N</td></tr>
 <tr><td>verifymessage</td><td>&lt;othila_address&gt; &lt;signature&gt; &lt;message&gt;</td><td>Verify a signed message.</td><td>N</td></tr>
 <tr><td colspan=4 align=center>Wallet</td></tr>
 <tr><td>addmultisigaddress</td><td>&lt;nrequired&gt; &lt;'["key",...]'&gt; [account]</td><td>Add a nrequired-to-sign multisignature address to the wallet.
-Each key is a Othila address or hex-encoded public key.
+Each key is a BTCT address or hex-encoded public key.
 If 'account' is specified, assign address to that account.</td><td>Y</td></tr>
-<tr><td>autocombinerewards</td><td>&lt;true&#124;false&gt; [threshold]</td><td>Wallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same Othila address.</td><td>Y</td></tr>
+<tr><td>autocombinerewards</td><td>&lt;true&#124;false&gt; [threshold]</td><td>Wallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same BTCT address.</td><td>Y</td></tr>
 <tr><td>backupwallet</td><td>&lt;destination&gt;</td><td>Safely copies wallet.dat to destination, which can be a directory or a path with filename.</td><td>N</td></tr>
 <tr><td>bip38decrypt</td><td>&lt;othila_address&gt; &lt;passphrase&gt;</td><td>Decrypts and then imports password protected private key.</td><td>Y</td></tr>
 <tr><td>bip38encrypt</td><td>&lt;othila_address&gt; &lt;passphrase&gt;</td><td>Encrypts a private key corresponding to 'othila_address'.</td><td>Y</td></tr>
@@ -97,8 +97,8 @@ If 'account' is specified, assign address to that account.</td><td>Y</td></tr>
 <tr><td>getaccountaddress</td><td>&lt;account&gt;</td><td>Returns the current bitcoin address for receiving payments to this account. If &lt;account&gt; does not exist, it will be created along with an associated new address that will be returned.</td><td>N</td></tr>
 <tr><td>getaddressesbyaccount</td><td>&lt;account&gt;</td><td>Returns the list of addresses for the given account.</td><td>N</td></tr>
 <tr><td>getbalance</td><td>[account] [minconf=1] [includeWatchonly=false]</td><td>If [account] is not specified, returns the server's total available balance.<br/>If [account] is specified, returns the balance in the account.</td><td>N</td></tr>
-<tr><td>getnewaddress</td><td>[account]</td><td>Returns a new Othila address for receiving payments.  If [account] is specified payments received with the address will be credited to [account].</td><td>Y</td></tr>
-<tr><td>getrawchangeaddress</td><td>&nbsp;</td><td>Returns a new Othila address, for receiving change.  This is for use with raw transactions, NOT normal use.</td><td>N</td></tr>
+<tr><td>getnewaddress</td><td>[account]</td><td>Returns a new BTCT address for receiving payments.  If [account] is specified payments received with the address will be credited to [account].</td><td>Y</td></tr>
+<tr><td>getrawchangeaddress</td><td>&nbsp;</td><td>Returns a new BTCT address, for receiving change.  This is for use with raw transactions, NOT normal use.</td><td>N</td></tr>
 <tr><td>getreceivedbyaccount</td><td>[account] [minconf=1]</td><td>Returns the total amount received by addresses with [account] in transactions with at least [minconf] confirmations. If [account] not provided return will include all transactions to all accounts.</td><td>N</td></tr>
 <tr><td>getreceivedbyaddress</td><td>&lt;othila_address&gt; [minconf=1]</td><td>Returns the amount received by &lt;othila_address&gt; in transactions with at least [minconf] confirmations. It correctly handles the case where someone has sent to the address in multiple transactions. Keep in mind that addresses are only ever used for receiving transactions. Works only for addresses in the local wallet, external addresses will always show 0.</td><td>N</td></tr>
 <tr><td>getstakesplitthreshold</td><td>&nbsp</td><td>Returns the threshold for stake splitting.</td><td>N</td></tr>

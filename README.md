@@ -123,10 +123,10 @@ If 'account' is specified, assign address to that account.</td><td>Y</td></tr>
 <tr><td>move</td><td>&lt;fromaccount&gt; &lt;toaccount&gt; &lt;amount&gt; [minconf=1] [comment]</td><td>Move from one account in your wallet to another</td><td>N</td></tr>
 <tr><td>sendfrom</td><td>&lt;fromaccount&gt; &lt;to_othila_address&gt; &lt;amount&gt; [minconf=1] [comment] [comment-to]</td><td>&lt;amount&gt; is a real and is rounded to 8 decimal places. Will send the given amount to the given address, ensuring the account has a valid balance using [minconf] confirmations. Returns the transaction ID if successful (not in JSON object).</td><td>Y</td></tr>
 <tr><td>sendmany</td><td>&lt;fromaccount&gt; {address:amount,...} [minconf=1] [comment]</td><td>Send multiple times. Amounts are double-precision floating point numbers</td><td>Y</td></tr>
-<tr><td>sendtoaddress</td><td>&lt;othila_address&gt; &lt;amount&gt; [comment] [comment-to]</td><td>Send an amount to a given address. &lt;amount&gt; is a real and is rounded to 8 decimal places. Returns the transaction ID &lt;txid&gt; if successful.</td><td>Y</td></tr>
-<tr><td>sendtoaddressix</td><td>&lt;othila_address&gt; &lt;amount&gt; [comment] [comment-to]</td><td>Send an amount to a given address using SwiftX. &lt;amount&gt; is a real and is rounded to 8 decimal places. Returns the transaction ID &lt;txid&gt; if successful.</td><td>Y</td></tr>
+<tr><td>sendtoaddress</td><td>&lt;btct_address&gt; &lt;amount&gt; [comment] [comment-to]</td><td>Send an amount to a given address. &lt;amount&gt; is a real and is rounded to 8 decimal places. Returns the transaction ID &lt;txid&gt; if successful.</td><td>Y</td></tr>
+<tr><td>sendtoaddressix</td><td>&lt;btct_address&gt; &lt;amount&gt; [comment] [comment-to]</td><td>Send an amount to a given address using SwiftX. &lt;amount&gt; is a real and is rounded to 8 decimal places. Returns the transaction ID &lt;txid&gt; if successful.</td><td>Y</td></tr>
 <tr><td>setaccount</td><td>&lt;othila_address&gt; &lt;account&gt;</td><td>Sets the account associated with the given address. Assigning address that is already assigned to the same account will create a new address associated with that account.</td><td>N</td></tr>
 <tr><td>setstakesplitthreshold</td><td>&lt;value&gt;</td><td>This will set the output size of your stakes to never be below the given value.</td><td>Y</td></tr>
 <tr><td>settxfee</td><td>&lt;amount&gt;</td><td>Set the transaction fee per kB.</td><td>N</td></tr>
-<tr><td>signmessage</td><td>&lt;othila_address&gt; &lt;message&gt;</td><td>Sign a message with the private key of an address.</td><td>Y</td></tr>
+<tr><td>signmessage</td><td>&lt;btct_address&gt; &lt;message&gt;</td><td>Sign a message with the private key of an address.</td><td>Y</td></tr>
 </table>

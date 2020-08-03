@@ -30,7 +30,7 @@ Required arguments are denoted inside &lt; and &gt; Optional arguments are insid
 <tr><td>help</td><td>[command]</td><td>List all commands, or get help for a specified command.</td><td>N</td></tr>
 <tr><td>stop</td><td>&nbsp;</td><td>Stop BTCT server.</td><td>N</td></tr>
 <tr><td colspan=4 align=center>Generating</td></tr>
-<tr><td>getgenerate</td><td>&nbsp;</td><td>"PoW Only" Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or othila.conf setting gen) It can also be set with the setgenerate call.</td><td>N</td></tr>
+<tr><td>getgenerate</td><td>&nbsp;</td><td>"PoW Only" Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or btct.conf setting gen) It can also be set with the setgenerate call.</td><td>N</td></tr>
 <tr><td>setgenerate</td><td>&lt;generate&gt; [genproclimit]</td><td>"PoW Only" Set 'generate' true or false to turn generation on or off. Generation is limited to 'genproclimit' processors, -1 is unlimited. See the getgenerate call for the current setting.</td><td>N</td></tr>
 <tr><td colspan=4 align=center>Mining</td></tr>
 <tr><td>getblocktemplate</td><td>[jsonrequestobject]</td><td>"PoW Only" Returns data needed to construct a block to work on.</td><td>N</td></tr>
@@ -80,8 +80,8 @@ otherwise connected information will also be available.</td><td>N</td></tr>
 <tr><td>createmultisig</td><td>&lt;nrequired&gt; &lt;'["key",...]'&gt;</td><td>Creates a multi-signature address with n signature of m keys required.</td><td>N</td></tr>
 <tr><td>estimatefee</td><td>&lt;nblocks&gt;</td><td>Estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within nblocks blocks.</td><td>N</td></tr>
 <tr><td>estimatepriority</td><td>&lt;nblocks&gt;</td><td>Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks.</td><td>N</td></tr>
-<tr><td>validateaddress</td><td>&lt;othila_address&gt;</td><td>Return information about the given othila address.</td><td>N</td></tr>
-<tr><td>verifymessage</td><td>&lt;othila_address&gt; &lt;signature&gt; &lt;message&gt;</td><td>Verify a signed message.</td><td>N</td></tr>
+<tr><td>validateaddress</td><td>&lt;btct_address&gt;</td><td>Return information about the given btct address.</td><td>N</td></tr>
+<tr><td>verifymessage</td><td>&lt;btct_address&gt; &lt;signature&gt; &lt;message&gt;</td><td>Verify a signed message.</td><td>N</td></tr>
 <tr><td colspan=4 align=center>Wallet</td></tr>
 <tr><td>addmultisigaddress</td><td>&lt;nrequired&gt; &lt;'["key",...]'&gt; [account]</td><td>Add a nrequired-to-sign multisignature address to the wallet.
 Each key is a BTCT address or hex-encoded public key.
